@@ -8,7 +8,9 @@
   URL>/setup/user/userstorageusage.jsp?id=005r0000005BrMAAU, where 005r0000005BrMAAU is the  
   user Id.
 - Uses simple-salesforce, selenium and chromedriver libraries for automation.
-- Provides flexibility to configure the SOQL based on which the export is generated.
+- Provides flexibility to configure the SOQL based on which the export is generated.   
+- Modify the `resources/config.py` file with your salesforce credentials and other settings to use the app.
+- A 30 seconds wait is added to the `SPFYUserlyzer.py` after login to allow the user to complete 2FA or identity verification. You can increase this wait as desired.
   
 To run the script from terminal:
 `python3 <PATH to SPFYUserlyzer.py>/SPFYUserlyzer.py`
